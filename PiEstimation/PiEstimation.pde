@@ -53,6 +53,9 @@ void keyPressed() {
   text("Actual Pi: "+PI, height+10, 80);
   float error = abs(PI-estimate)/PI*100;
   text("% Error: "+error, height+10, 100);
+  
+  if(key == 's')
+    saveFrame("pi-2018.png");
 }
 
 void makePoint() {
